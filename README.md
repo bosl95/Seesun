@@ -1,3 +1,4 @@
+
 # 시선(視先)
 
 ###  視先(볼 시, 먼저 선) 
@@ -10,7 +11,7 @@
 ###  [1. Summary](#pushpin-project-summary)
 ### [2. Background](#pushpin-background)
 ### [3. Custom YOLO Model](#pushpin-custom-yolo-model)
-1. [Data augmentation](#pencil2-data-augmentation)
+1. [Data processing](#pencil2-data-processing)
 2. [Modify cfg for custom data](#pencil2-modify-cfg-for-custom-data)
 3. [Train YOLOv3 tiny on Google Colab](#pencil2-train-yolov3-tiny-on-google-colab)
 4. [How to Increase Accuracy](#pencil2-how-to-increase-accuracy)
@@ -111,7 +112,7 @@ Darknet을 Tensorflow에 적용<br>
 
 ## :pushpin: Custom YOLO Model
 
-### :pencil2: Data Augmentation
+### :pencil2: Data Processing
 <br>
 <details>
 <summary> :books: Data processing </summary>
