@@ -4,16 +4,17 @@
 ## :heavy_check_mark: 목차
 ###  [1. Summary](#pushpin-project-summary)
 ### [2. Background](#pushpin-background)
-### [3. Make Custom YOLO Model](#pushpin-make-custom-yolo-model)
+### [3. Custom YOLO Model](#pushpin-custom-yolo-model)
 1. [Data augmentation](#pencil2-data-augmentation)
 2. [Modify cfg for custom data](#pencil2-modify-cfg-for-custom-data)
 3. [Train YOLOv3 tiny on Google Colab](#pencil2-train-yolov3-tiny-on-google-colab)
 4. [How to Increase Accuracy](#pencil2-how-to-increase-accuracy)
-### [4. Outputs](#pushpin-outputs)
+### [4. YOLO Object Detection on Android](#pushpin-yolo-object-detection-on-android)
+### [5. Outputs](#pushpin-outputs)
 
 ## :pushpin: Project Summary
 
-### :books:: 개발 배경
+### :books: 개발 배경
 - #### 대중교통 이용의 불편함 [[출처 : 유튜브 MBCNEWS]](https://youtu.be/saoX-lR-iJ0)
 	대중교통, 특히 버스의 경우 타고자 하는 버스가 오는지 안 오는지 확실하게 판단하기 힘들다.
 	(ex.버스 탑승을 위해 평균 20~30분을 기다리는 시각장애인들, 잘못된 버스를 타는 경우도 흔함)
@@ -95,15 +96,38 @@ c언어로 작성된 물체 인식 오픈 소스 신경망
 </details>
 <br>
 
-## :pushpin: Make Custom YOLO Model
+## :pushpin: Custom YOLO Model
 
 ### :pencil2: Data Augmentation
+<details>
+<summary> :books: Data processing </summary>
+<br>
+
+### :mag_right: 신호등 데이터셋  : [[AI Hub]](http://www.aihub.or.kr/aidata/136)
+  신호등이 있는 사진과 Bounding Box가 되어있는 xml파일을 받았으나, 
+:warning: **보행등과 차량등이 분류가 되어있지 않다**:warning:  는 문제점이 발생하였다. 
+
+### :bulb: 해결방안  
+  1) 우선적으로 데이터 셋에 신호등이 다 있는 것도 아니기 때문에 1차적으로 신호등을 찾아준다.  
+  ⇒ 신호등 label을 갖는 사진을 분류한다는 의미  
+  
+  2) label을 확인함과 동시에 신호등 사진을 띄운다. 그 사진속에 있는 신호등이 보행등이라면 저장, 차량등이라면 저장하지 않고 넘어간다.  
+  
+  3) 사진을 저장하는 경우에 label 데이터는 가공이 필요하다.  
+  현재 AI hub에서 제공되는 Bounding Box  좌표 ⇒ (좌상단 x, 좌상단 y, 우하단 x, 우하단 y좌표)  
+
+
+</div>
+</details>
+<br>
 
 ### :pencil2: Modify cfg For Custom Data
 
 ### :pencil2: Train YOLOv3 tiny on Google Colab
 
 ### :pencil2: How to Increase Accuracy
+
+## :pushpin: YOLO Object Detection on Android
 
 
 ## :pushpin: Outputs
