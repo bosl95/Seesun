@@ -490,6 +490,10 @@ BBox25/Bbox30 제외한 모든 데이터셋 학습 ⇒ 30분 남겨놓고 터졌
 ### 이 이후부터는 [Data Augmentation](https://github.com/bosl95/MachineLearning_Note/tree/master/contest_preparation/data%20augmentation)에 정리
 
 
+- 남은 과제들
+- [x] 횡단보도 정확도 올리기 
+- [x] 횡단보도 + 신호등 데이터셋을 모두 합친 학습 모델 만들기.
+- [ ]  횡단보도 / 신호등 을 탐지하는 학습 모델 정확도 올리기
 
 ## :pushpin: YOLO Object Detection on Android
 
