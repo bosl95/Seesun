@@ -1,3 +1,4 @@
+
 # Custom Data Processing
 
 
@@ -156,27 +157,11 @@ darknet train을 실행하는 현재 경로에서 상대 경로를 찾아서 학
 - train data와 validation data로 분리한다. 
 - 이때 custom 폴더 안에 저장하므로 실행 전 custom 폴더가 존재해야한다.
  
-<br>
-<details>    
-<summary>:mag_right: <전체 결과> </summary> 
-<br>
+
+#### :mag_right: <실행 결과>
+
         
    <image src="https://user-images.githubusercontent.com/34594339/89789807-0ffe0000-db5c-11ea-9266-b7a23b01e7c9.png" width="40%">
-
-
- - [x] 전에 만들어놓은 신호등 데이터셋으로 학습 다시 시켜보기    
- - [x] 예지가 만들어놓은 신호등 데이터셋을 추가 학습 시켜보기
-	- 미리 학습시켜놓았던 weight 파일(정확도 53%)에  남은 데이터 파일을 학습시켜보았다.<br>
-		⇒ 정확도가 45%로 약 10%가 내려갔다.
-- [x] 모든 데이터셋을 합쳐서 처음부터 학습시켜보기
-
-	<image src="https://user-images.githubusercontent.com/34594339/90980085-26f91500-e594-11ea-8208-56fa07f77410.png" width="60%">
-
-#### :fire: **45% ⇒ 54%로 상승. 똑같은 데이터임에도 불구하고 처음부터 다시 학습시키니 정확도가 제대로 상승하는 것을 확인할 수 있었다.**
-  <br>
- </div>
- </details>
- <br>  
  
  <br>
 <details>    
