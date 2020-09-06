@@ -1,4 +1,8 @@
 # 시선(視先)
+
+###  視先(볼 시, 먼저 선) 
+> ### :loudspeaker: "먼저 바라보고, 시각 기능을 제공하다."
+
 ### 시각 장애인의 안전한 보행을 위한 횡단보도/신호등 탐지 프로그램
 
 ## :heavy_check_mark: 목차
@@ -117,7 +121,7 @@ c언어로 작성된 물체 인식 오픈 소스 신경망
   3) 사진을 저장하는 경우에 label 데이터는 가공이 필요하다.  
   현재 AI hub에서 제공되는 Bounding Box  좌표 ⇒ (좌상단 x, 좌상단 y, 우하단 x, 우하단 y좌표)  
 
-### :point_right: [Explore Labeling folder]()
+### :point_right: [Explore Labeling folder](https://github.com/bosl95/Seesun/tree/master/Labeling)
 
 </div>
 </details>
