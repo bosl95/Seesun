@@ -237,6 +237,41 @@ F12를 눌러 자바 스크립트 창에 입력해주면 된다.<br>
 
 ### :pencil2: Train YOLOv3 tiny on Google Colab
 
+<details>
+<summary>  :point_right: Click </summary>
+<br>
+
+###  :fire: train custom data
+
+	!./darknet detector train custom/custom.data custom/custom_yolov4-tiny.cfg custom/yolov4-tiny.conv.29 -dont_show 
+
+- 원래 map과 loss에 대한 그래프가 나오는데 코랩의 리눅스 상에서는 볼 수 없는 듯하다.<br>
+  에러가 나기 때문에 dont_show를 추가해 보지 않는 것으로 처리해준다. <br>
+   
+#### :page_with_curl: yolov3-tiny.conv.15 : pre-train된 weight<br>
+ [Fine-Tuning](https://eehoeskrap.tistory.com/186)을 하고 싶을 떄 마지막 레이어를 삭제하고 모델 파일과 가중치 파일을 이용하여 darknet53.conv.74 처럼 가중치 파일을 생성 할 수도 있다.
+  
+  
+	./darknet partial cfg / yolov3-tiny.cfg yolov3-tiny.weights yolov3-tiny.conv.15 15
+
+###  :fire: detect custom model
+
+	!./darknet detector test custom/custom.data custom/custom_yolov4-tiny.cfg custom_yolov4-tiny_last.weights -thresh 0.25 -dont_show -ext_output < custom/train.txt > result.txt  
+
+:x: tarin.txt에 있는 이미지의 경로를 읽어오지 못한다는 에러 발생<br>
+
+#### ⇒ 경로가 제대로 설정 되어 있음에도 에러가 발생한다면,<br>
+#### 1. 절대 경로로 재설정
+#### 2. 리눅스상에서 읽을 수 있는 포맷으로 변환 ( module : dos2unix )
+
+	!apt-get install dos2unix   
+	!dos2unix custom/train.txt  # to linux format
+
+</div>
+</details>
+<br>
+
+
 ### :pencil2: How to Increase Accuracy
 <details>
 <summary> :books: Data augmentation </summary>
