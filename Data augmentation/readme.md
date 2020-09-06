@@ -25,17 +25,18 @@
   <br>
  </div>    
 </details> 
+<br>
 
 ## :rocket: Check Label
 #### :pencil: dir에 확인할 라벨링 데이터 폴더 이름을 넣어주면 라벨링된 이미지를 띄워준다.    
-    
+   <br> 
     
 ## :rocket: Make Square
 #### :pencil: 직사각형의 이미지를 정사각형 형태로 만들어주기    
 ⇒ yolov3에서 416*416 형태로 학습을 진행하기 때문에 정사각형 변형을 통해 정확도 향상을 확인    
     
 'images' 폴더 대신에 들어갈 인풋 이미지 폴더 이름을 넣어주고, 'output' 폴더에 정사각형 형태의 이미지가 저장  
-    
+  <br>  
     
     
 ## :rocket: Resize certain ratio
@@ -47,13 +48,13 @@
 ![image](https://user-images.githubusercontent.com/34594339/91967657-78e92a00-ed4e-11ea-986c-71bebdead81b.png)    
     
 #### :heavy_exclamation_mark: convert 함수(꼭지점 ⇒ yolo  포맷 변환)에 shape를 전달해줄때 w, h 가 뒤바뀐다. :heavy_exclamation_mark:
-
+<br>
     
 
 ## :rocket: resize 300x300.py   
 
 #### :pencil: 300*300 크기의 사진으로 resize 해준다.
-
+<br>
 
 ## :pushpin: Data augmentation
 
@@ -90,11 +91,6 @@
     <image src="https://user-images.githubusercontent.com/34594339/92205483-bcfc3c00-eec0-11ea-9e88-7162df41d5c8.png" width="50%">    
     
    <예시> 876x876 크기 안에 300x300 으로 리사이즈된 신호등 데이터     
-3. A'를 876x876 크기안에 붙여준다. ⇒ yolo에서는 416x416으로 학습된다.    
-    
-   <image src="https://user-images.githubusercontent.com/34594339/92205583-f8970600-eec0-11ea-8503-49b28613b4fc.png" width="50%">    
-    
-   <예시> 876x876 사이즈에 중앙에 위치시키고, yolo 학습사이즈인 416x416으로 변형했을때의 모습    
      
  <br>
  </div>    
