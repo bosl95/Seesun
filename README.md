@@ -15,7 +15,8 @@
 3. [Train YOLOv3 tiny on Google Colab](#pencil2-train-yolov3-tiny-on-google-colab)
 4. [How to Increase Accuracy](#pencil2-how-to-increase-accuracy)
 ### [4. YOLO Object Detection on Android](#pushpin-yolo-object-detection-on-android)
-### [5. Outputs](#pushpin-outputs)
+### [5. TTS(Text To Speech)](#pushpin-text-to-speech)
+### [6. Outputs](#pushpin-outputs)
 
 ## :pushpin: Project Summary
 
@@ -135,5 +136,6 @@ c언어로 작성된 물체 인식 오픈 소스 신경망
 
 ## :pushpin: YOLO Object Detection on Android
 
+## :pushpin: Text To Speech
 
 ## :pushpin: Outputs
