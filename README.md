@@ -502,7 +502,7 @@ BBox25/Bbox30 제외한 모든 데이터셋 학습 ⇒ 30분 남겨놓고 터졌
 
 #### 파이썬의  OpenCV를 사용하기 위해 Darknet 모델을 Keras 모델로 변환
 
-[link]()
+[link](https://github.com/bosl95/Seesun/tree/master/Detect)
 
 <br>
 </div>
