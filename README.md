@@ -487,7 +487,7 @@ BBox25/Bbox30 제외한 모든 데이터셋 학습 ⇒ 30분 남겨놓고 터졌
 </details>
 
 
-### 이 이후부터는 [Data Augmentation](https://github.com/bosl95/MachineLearning_Note/tree/master/contest_preparation/data%20augmentation)에 정리
+### 이 이후부터는 [Data Augmentation](https://github.com/bosl95/Seesun/blob/master/Data%20augmentation)에 정리
 
 
 - 남은 과제들
