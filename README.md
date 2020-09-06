@@ -116,7 +116,7 @@ Darknet을 Tensorflow에 적용<br>
 ### :pencil2: Google Colab
 
 <details>
-<summary> </summary>
+<summary> :point_up_2: Click </summary>
 <br>
 
 #### yolo를 노트북에서도 사용하기 위해서는 **GPU를 사용해야 한다.**   
@@ -150,7 +150,6 @@ F12를 눌러 자바 스크립트 창에 입력해주면 된다.<br>
 ## :pushpin: Custom YOLO Model
 
 ### :pencil2: Data Processing
-<br>
 <details>
 <summary> </summary>
 
@@ -173,12 +172,41 @@ F12를 눌러 자바 스크립트 창에 입력해주면 된다.<br>
 </details>
 <br>
 
+### :pencil2: Data File for YOLO
+<details>
+<summary> </summary>
+
+#### :page_with_curl: ```obj.data``` : 학습을 위한 내용이 담긴 파일  
+   - classes 개수  
+   - train.txt와 valid.txt의 경로  
+   - obj.names의 경로  
+   - weight을 저장할 폴더의 경로  
+####  :page_with_curl: ``obj.cfg`` : 모델 구조 및 train과 관련된 설정이 들어있는 파일  
+   - batch 및  subdivisions 사이즈(Cuda memory 관련), width 및 height 사이즈  
+   - learning late, burn_in, max_batches,  policy, steps, scales 설정  
+   - filter : (4+1+class수) * 3  
+   - classes  
+   - anchors 및 mask 설정  
+#### :page_with_curl: ``weight``  : 미리 트레이닝 된 모델 또는 darknet53.conv.74 등의 가중치 파일  
+#### :page_with_curl: ``obj.names`` : annotation에 포함되어있는 라벨링 이름 목록. 검출하고자 하는 목록  
+#### :page_with_curl: ``train.txt`` : 학습시킬 이미지들의 경로들이 담긴 리스트  
+#### :page_with_curl: ``valid.txt`` : 학습 시 validation 할 이미지들의 경로들이 담긴 리스트  
+ 
+</div>
+</details>
+<br>
+
 ### :pencil2: Modify cfg For Custom Data
+<details>
+<summary> </summary>
+
+</div>
+</details>
+<br>
 
 ### :pencil2: Train YOLOv3 tiny on Google Colab
 
 ### :pencil2: How to Increase Accuracy
-<br>
 <details>
 <summary> :books: Data augmentation </summary>
 <br>
