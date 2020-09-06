@@ -113,10 +113,10 @@ Darknet을 Tensorflow에 적용<br>
 <br>
 
 
-### :pencil2: Google Colab
+### Google Colab
 
 <details>
-<summary> :point_up_2: Click </summary>
+<summary> :point_right: Click </summary>
 <br>
 
 #### yolo를 노트북에서도 사용하기 위해서는 **GPU를 사용해야 한다.**   
@@ -151,7 +151,7 @@ F12를 눌러 자바 스크립트 창에 입력해주면 된다.<br>
 
 ### :pencil2: Data Processing
 <details>
-<summary> </summary>
+<summary>  :point_right: Click </summary>
 
 ### :mag_right: 신호등 데이터셋  : [[AI Hub]](http://www.aihub.or.kr/aidata/136)
   신호등이 있는 사진과 Bounding Box가 되어있는 xml파일을 받았으나, 
@@ -174,7 +174,7 @@ F12를 눌러 자바 스크립트 창에 입력해주면 된다.<br>
 
 ### :pencil2: Data File for YOLO
 <details>
-<summary> </summary>
+<summary>  :point_right: Click </summary>
 
 #### :page_with_curl: ```obj.data``` : 학습을 위한 내용이 담긴 파일  
    - classes 개수  
@@ -187,7 +187,7 @@ F12를 눌러 자바 스크립트 창에 입력해주면 된다.<br>
    - filter : (4+1+class수) * 3  
    - classes  
    - anchors 및 mask 설정  
-#### :page_with_curl: ``weight``  : 미리 트레이닝 된 모델 또는 darknet53.conv.74 등의 가중치 파일  
+#### :page_with_curl: ``weight``  : 미리 트레이닝된 모델 또는 darknet53.conv.74 등의 가중치 파일
 #### :page_with_curl: ``obj.names`` : annotation에 포함되어있는 라벨링 이름 목록. 검출하고자 하는 목록  
 #### :page_with_curl: ``train.txt`` : 학습시킬 이미지들의 경로들이 담긴 리스트  
 #### :page_with_curl: ``valid.txt`` : 학습 시 validation 할 이미지들의 경로들이 담긴 리스트  
@@ -198,7 +198,38 @@ F12를 눌러 자바 스크립트 창에 입력해주면 된다.<br>
 
 ### :pencil2: Modify cfg For Custom Data
 <details>
-<summary> </summary>
+<summary>  :point_right: Click </summary>
+<br>
+
+#### :zap: cfg 설정  
+   
+   <image src="https://user-images.githubusercontent.com/34594339/89791590-7b48d180-db5e-11ea-9c98-5e67e557fc33.png" width="100%"><br>
+
+<br>
+:small_blue_diamond: max_batches = number of classes * 2000 <br>
+:small_blue_diamond: steps = max_batches의 80%, max_batches의 90%<br>
+<br>
+  
+#### :zap: anchor 계산  
+   
+   <image src="https://user-images.githubusercontent.com/34594339/89791801-b9de8c00-db5e-11ea-9e7a-b9e63bdbe049.png" width="100%">
+   
+
+### :information_source: Source
+<details>
+<summary>  :point_right: How To set cfg File </summary>
+<br>
+
+:fire: [https://murra.tistory.com/115](https://murra.tistory.com/115)<br>
+:round_pushpin: [https://keyog.tistory.com/22](https://keyog.tistory.com/22)  <br>
+:round_pushpin: [https://eehoeskrap.tistory.com/370](https://eehoeskrap.tistory.com/370)<br>
+:round_pushpin: [https://codingzzangmimi.tistory.com/76](https://codingzzangmimi.tistory.com/76) <br>
+:round_pushpin: [https://go-programming.tistory.com/160](https://go-programming.tistory.com/160)<br>
+ :round_pushpin: [https://github.com/AlexeyAB/darknet#how-to-train-to-detect-your-custom-objects](https://github.com/AlexeyAB/darknet#how-to-train-to-detect-your-custom-objects)  
+
+</div>
+</details>
+<br>
 
 </div>
 </details>
