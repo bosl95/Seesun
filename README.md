@@ -6,7 +6,7 @@
 
 ### 시각 장애인의 안전한 보행을 위한 횡단보도/신호등 탐지 프로그램
 
-## :heavy_check_mark: 목차
+## :heavy_check_mark: Contents
 ###  [1. Summary](#pushpin-project-summary)
 ### [2. Background](#pushpin-background)
 ### [3. Custom YOLO Model](#pushpin-custom-yolo-model)
