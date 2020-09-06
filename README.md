@@ -142,6 +142,13 @@ Darknet을 Tensorflow에 적용<br>
 ### :pencil2: Train YOLOv3 tiny on Google Colab
 
 ### :pencil2: How to Increase Accuracy
+<br>
+<details>
+<summary> :books: Data augmentation </summary>
+<br>
+</div>
+</details>
+<br>
 
 ## :pushpin: YOLO Object Detection on Android
 
