@@ -9,6 +9,7 @@
 2. [Modify cfg for custom data](#pencil2-modify-cfg-for-custom-data)
 3. [Train YOLOv3 tiny on Google Colab](#pencil2-train-yolov3-tiny-on-google-colab)
 4. [How to Increase Accuracy](#pencil2-how-to-increase-accuracy)
+### [4. Outputs](#pushpin-outputs)
 
 ## :pushpin: Project Summary
 
@@ -105,3 +106,6 @@
 ### :pencil2: Train YOLOv3 tiny on Google Colab
 
 ### :pencil2: How to Increase Accuracy
+
+
+## :pushpin: Outputs
