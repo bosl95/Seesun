@@ -491,10 +491,25 @@ BBox25/Bbox30 제외한 모든 데이터셋 학습 ⇒ 30분 남겨놓고 터졌
 <br>
 </div>
 </details>
+<br>
 
 ### :pencil2: Detect on Video
+<br>
 
-- 남은 과제들
+<details>
+<summary> :zap: Using Python OpenCV </summary>
+<br>
+
+#### 파이썬의  OpenCV를 사용하기 위해 Darknet 모델을 Keras 모델로 변환
+
+[link]()
+
+<br>
+</div>
+</details>
+<br>
+
+#### :hourglass_flowing_sand: To Do
 - [x] 횡단보도 정확도 올리기 
 - [x] 횡단보도 + 신호등 데이터셋을 모두 합친 학습 모델 만들기.
 - [ ]  횡단보도 / 신호등 을 탐지하는 학습 모델 정확도 올리기
