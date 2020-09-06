@@ -47,7 +47,15 @@
 
 ### :pencil2: Darknet
 
-c언어로 작성된 물체 인식 오픈 소스 신경망
+C언어로 작성된 물체 인식 오픈 소스 신경망<br>
+YOLO 개발자가 특별히 제작한 프레임워크
+빠르고  GPU/CPU와 함께 사용이 가능하나, 리눅스에서만 호환된다.
+
+### :pencil2: Darkflow
+
+Darknet을 Tensorflow에 적용<br>
+빠르고 GPU/CPU와 함께 사용이 가능하고 Linux/Mac/Window에서 호환이 가능하나,
+설치가 복잡하다.
 
 ### :pencil2: YOLO란?
 <details>
@@ -55,10 +63,10 @@ c언어로 작성된 물체 인식 오픈 소스 신경망
 <br>
 
 ### **"darknet을 통해 학습된 신경망"**  
-이전 탐지 시스템은 classifier나 localizer를 사용해 탐지를 수행합니다.
-하지만 YOLO는 하나의 신경망을 전체 이미지에 적용합니다.
-이 신경망은 이미지를 영역으로 분할하고 각 영역의 Bounding Box와 확률을 예측합니다.
-이런 Bounding Box는 예측된 확률에 의해 가중치가 적용됩니다.
+이전 탐지 시스템은 classifier나 localizer를 사용해 탐지를 수행한다.<br>
+하지만 YOLO는 하나의 신경망을 전체 이미지에 적용한다.<br>
+이 신경망은 이미지를 영역으로 분할하고 각 영역의 Bounding Box와 확률을 예측한다.<br>
+이런 Bounding Box는 예측된 확률에 의해 가중치가 적용된다.<br>
 
 </div>
 </details>
