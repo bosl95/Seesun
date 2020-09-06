@@ -1,6 +1,7 @@
 # 시선(視先)
+### 시각 장애인의 안전한 보행을 위한 횡단보도/신호등 탐지 프로그램
 
-## 목차
+## :heavy_check_mark: 목차
 ###  [1. Summary](#pushpin-project-summary)
 ### [2. Background](#pushpin-background)
 ### [3. Make Custom YOLO Model](#pushpin-make-custom-yolo-model)
