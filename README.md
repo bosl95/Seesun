@@ -41,9 +41,7 @@
 
 ### :pencil2: Darknet
 
-- ### :mag_right: Darknet이란?
-	
-	c언어로 작성된 물체 인식 오픈 소스 신경망
+c언어로 작성된 물체 인식 오픈 소스 신경망
 
 ### :pencil2: YOLO란?
 <details>
