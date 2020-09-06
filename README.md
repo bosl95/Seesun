@@ -1,15 +1,13 @@
 # 시선(視先)
+
 ## 목차
 ###  [1. Summary](#pushpin-project-summary)
-### [2. 개발 절차](#개발-절차)
-1. ### [Darknet ](#darknet이란)
-2. ### [YOLO ](#yolo)
-3. ### [YOLOV4 실행해보기 ](#yolov4-실행해보기)
-4. ### [커스텀 모델로 학습모델 만들기 ](#custom-dataset을-이용한-학습모델-구현)
-	4-1. [데이터 가공하기 ](#1-데이터-가공하기)
-	4-2. [훈련을 위한 cfg 설정](#2-훈련시키기-위한-설정)
-	4-3. [학습 모델 구현 과정](#3-학습-모델-구현하기)
-	4-4. [세부 설정 조정](#4-세부-작업)
+### [2. Background](#pushpin-background)
+### [3. Make Custom YOLO Model](#pushpin-make-custom-yolo-model)
+1. [Data augmentation](#pencil2-data-augmentation)
+2. [Modify cfg for custom data](#pencil2-modify-cfg-for-custom-data)
+3. [Train YOLOv3 tiny on Google Colab](#pencil2-train-yolov3-tiny-on-google-colab)
+4. [How to Increase Accuracy](#pencil2-how-to-increase-accuracy)
 
 ## :pushpin: Project Summary
 
@@ -35,19 +33,22 @@
 	- 시각 장애인의 안전  : 직접 부딪히고 닿아서 물체의 위치 확인. 벽에 붙어서 보행
 	- 비시각 장애인의 안전 : 아무 물체가 없는 중간이 안전하다고 생각하고 중간으로 안내
 	### ⇒ **시각장애인의 needs에 초점을 맞춰 기능을 구현**
-
-## :pushpin: 개발 절차
-
-### :pencil2: Darknet이란?
-c언어로 작성된 물체 인식 오픈 소스 신경망
-
-### :pencil2: YOLO
-
-<details>
-<summary><펼쳐보기></summary>
 <br>
 
-### **darknet을 통해 학습된 신경망**  
+## :pushpin: Background
+
+### :pencil2: Darknet
+
+- ### :mag_right: Darknet이란?
+	
+	c언어로 작성된 물체 인식 오픈 소스 신경망
+
+### :pencil2: YOLO란?
+<details>
+<summary> :zap: CONCEPT</summary>
+<br>
+
+### **"darknet을 통해 학습된 신경망"**  
 이전 탐지 시스템은 classifier나 localizer를 사용해 탐지를 수행합니다.
 하지만 YOLO는 하나의 신경망을 전체 이미지에 적용합니다.
 이 신경망은 이미지를 영역으로 분할하고 각 영역의 Bounding Box와 확률을 예측합니다.
@@ -56,3 +57,50 @@ c언어로 작성된 물체 인식 오픈 소스 신경망
 </div>
 </details>
 <br>
+<details>
+<summary> :grey_question: How to Run YOLOV4</summary>
+<br>
+
+
+## :fire: Run YOLOv4
+1) dark net의 weight ⇒ yolov4.weights 으로 변환하는 과정.    
+
+	```
+	# Convert darknet weights to tensorflow
+	## yolov4  버전
+	python save_model.py --weights ./data/yolov4.weights --output ./checkpoints/yolov4-416 --input_size 416 --model yolov4 
+
+	## yolov4-tiny 버전
+	python save_model.py --weights ./data/yolov4-tiny.weights --output ./checkpoints/yolov4-tiny-416 --input_size 416 --model yolov4 --tiny
+	```
+2) object detection이 잘 되는 지 확인하기	  
+	```
+	# Run demo tensorflow
+	python detect.py --weights ./checkpoints/yolov4-416 --size 416 --model yolov4 --image ./data/kite.jpg
+
+	python detect.py --weights ./checkpoints/yolov4-tiny-416 --size 416 --model yolov4 --image ./data/kite.jpg --tiny
+	```
+3) 결과  
+   <image src="https://github.com/kairess/tensorflow-yolov4-tflite/raw/master/result.png" width="90%">
+  
+   <image src="https://user-images.githubusercontent.com/34594339/89185473-3f998f00-d5d5-11ea-99f7-45c37f85e8f0.png" width="90%">  
+  
+	 #### ⇒ yolov4 weight (위) / yolo4-tiny (아래)  
+	 #### 속도는 tiny가 훨씬 빠르다.  
+
+#### :x:  YOLOV4를 이용해 커스텀 데이터 셋을 만들려고 하였으나, YOLOV3를 이용한 정확도가 훨씬 높아 YOLOV3-tiny를 사용하기로 함.
+ <br>
+ 
+</div>
+</details>
+<br>
+
+## :pushpin: Make Custom YOLO Model
+
+### :pencil2: Data Augmentation
+
+### :pencil2: Modify cfg For Custom Data
+
+### :pencil2: Train YOLOv3 tiny on Google Colab
+
+### :pencil2: How to Increase Accuracy
