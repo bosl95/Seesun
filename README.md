@@ -1,4 +1,5 @@
 
+
 # 시선(視先)
 
 ###  視先(볼 시, 먼저 선) 
@@ -72,12 +73,13 @@ Darknet을 Tensorflow에 적용<br>
 </div>
 </details>
 <br>
-<details>
-<summary> :grey_question: How to Run YOLOV4</summary>
-<br>
 
+<details>
+<summary> :grey_question: How to Run YOLOV4 </summary>
+<br> 
 
 ## :fire: Run YOLOv4
+
 1) dark net의 weight ⇒ yolov4.weights 으로 변환하는 과정.    
 
 	```
@@ -104,8 +106,43 @@ Darknet을 Tensorflow에 적용<br>
 	 #### 속도는 tiny가 훨씬 빠르다.  
 
 #### :x:  YOLOV4를 이용해 커스텀 데이터 셋을 만들려고 하였으나, YOLOV3를 이용한 정확도가 훨씬 높아 YOLOV3-tiny를 사용하기로 함.
+
  <br>
- 
+</div>
+</details>
+<br>
+
+
+### :pencil2: Google Colab
+
+<details>
+<summary> </summary>
+<br>
+
+#### yolo를 노트북에서도 사용하기 위해서는 **GPU를 사용해야 한다.**   
+#### 이를 위해서 Google에서 지원하는 Colab을 이용해 yolo를 구동시킬 수 있다.  
+
+<br>
+
+#### Colab을 세션을 12시간만 유지시켜주기 때문에 저장이 불가하다. <br>
+#### ⇒  구글 드라이브에 데이터를 저장해 놓고 마운트 해서 쓸 수 있다
+
+<br>
+
+#### :bulb: Colab 런타임 장시간 세션 유지하기
+    function ClickConnect() { // 백엔드를 할당하지 못했습니다. // GPU이(가) 있는 백엔드를 사용할 수 없습니다. 가속기가 없는 런타임을 사용하시겠습니까? // 취소 버튼을 찾아서 클릭 var buttons = document.querySelectorAll("colab-dialog.yes-no-dialog paper-button#cancel"); buttons.forEach(function(btn) { btn.click(); }); console.log("1분마다 자동 재연결"); document.querySelector("#top-toolbar > colab-connect-button").click(); } setInterval(ClickConnect,1000*60);  
+
+F12를 눌러 자바 스크립트 창에 입력해주면 된다.<br>
+  
+
+#### :bulb: 주피터 노트북이 명령 프롬트에서 입력한  것처럼  처리하는 명령어  
+   - `` !`` :  쉘이 끝나면 유지 되지 않음
+   - ``%`` : 쉘이 끝난 후에도 계속 유지
+	   
+#### <실행 화면>
+
+<image src="https://user-images.githubusercontent.com/34594339/89725910-db9d1d80-da4f-11ea-88bf-8ab79c47a555.png" width="80%">  
+
 </div>
 </details>
 <br>
@@ -115,8 +152,7 @@ Darknet을 Tensorflow에 적용<br>
 ### :pencil2: Data Processing
 <br>
 <details>
-<summary> :books: Custom Data </summary>
-<br>
+<summary> </summary>
 
 ### :mag_right: 신호등 데이터셋  : [[AI Hub]](http://www.aihub.or.kr/aidata/136)
   신호등이 있는 사진과 Bounding Box가 되어있는 xml파일을 받았으나, 
