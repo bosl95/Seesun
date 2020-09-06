@@ -112,10 +112,10 @@ Darknet을 Tensorflow에 적용<br>
 
 ## :pushpin: Custom YOLO Model
 
-### :pencil2: Custom Data
+### :pencil2: Data Processing
 <br>
 <details>
-<summary> :books: Data processing </summary>
+<summary> :books: Custom Data </summary>
 <br>
 
 ### :mag_right: 신호등 데이터셋  : [[AI Hub]](http://www.aihub.or.kr/aidata/136)
