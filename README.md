@@ -1,5 +1,6 @@
 
 
+
 # 시선(視先)
 
 ###  視先(볼 시, 먼저 선) 
@@ -403,7 +404,7 @@ F12를 눌러 자바 스크립트 창에 입력해주면 된다.<br>
 <br>
 
 <details>
-<summary> :zap: 횡단보도/신호등 탐지 모델 합치기</summary>
+<summary> :zap: Merge Traffic Light Model And Crosswalk Model</summary>
 <br>
 
  - [x] 만들어놓은 신호등 데이터셋으로 학습 다시 시켜보기 
@@ -419,6 +420,76 @@ F12를 눌러 자바 스크립트 창에 입력해주면 된다.<br>
 <br>
 </div>
 </details>
+
+<br>
+<details>
+<summary> :zap: Add Traffic Light Dataset</summary>
+<br>
+
+#### :black_nib: 첫번째 시도
+ 횡단보도 데이터셋 + AI Hub 데이터셋 전부 : :x: 초반에 터짐 / 아예 안됨 :x: <br>
+ cfg 설정 등을 바꿔보면서 or  데이터셋을 로컬에 다운,  구글 드라이브에 재업로드 (구글 드라이브 상의 문제로 인한)
+
+
+#### :black_nib: 두번째 시도
+신호등 원본 데이터 셋 + Bbox4는 원래 잘 됐었기 때문에 새로 추가한 Bbox들을 하나씩 빼보면서 학습을 실행<br>
+⇒ 25, 30을 빼고 나니 학습이 되긴함.
+
+#### :black_nib: 세번째 시도
+BBox25/Bbox30 제외한 모든 데이터셋 학습 ⇒ 30분 남겨놓고 터졌다.
+
+ ### ⇒ :warning: Colab 상의 문제로 밝혀졌다. 무료 버전을 사용하고 있는데, 12시간 이상의 과도한 GPU 사용하면 구글에서 자체적으로 세션을 중지시킨다고 한다. (~~무료 버전의 한계~~) 
+
+#### :black_nib: 네번째 시도
+신호등까지 추가 라벨링을 해준 횡단보도 원본 데이터셋만 학습<br>
+ ⇒ 횡단보도 정확도 : 58.40 %
+ ⇒ 신호등 정확도 : 47.38 %
+
+#### :black_nib: 다섯번째 시도
+커스텀 데이터셋만 (Bbox 전부, 25/30 여전히 안됨) : 둘다 20%대
+
+<br>
+</div>
+</details>
+
+<br>
+<details>
+<summary> :zap: Dataset classification according to accuracy</summary>
+<br>
+
+1. 횡단보도 데이터 셋 : 이미 라벨링 된 데이터 사용.
+	 #### :black_nib: 이 데이터셋의 신호등은 라벨링이 되어있지 않아 일단 사용하지 않기로 함
+2. #### :black_nib: 신호등 데이터셋 : **신호등만 보이도록 이미지를 자름**
+	- Bbox1(AI hub) 
+	- 구글링한 신호등 데이터 
+	- 직접 찍은 동영상 라벨링
+
+3. 라벨 :  [cross walk, traffic light]<br>
+	 #### :black_nib:  [cross walk, red light, green light, black]으로 바꿈
+4. 폴더 분류 
+	-  Clear(확실)
+	-  neutral(중간) : 빛 번짐 없음. 형체가 확실한데 거리가 가깝고 빛번짐 살짝 허용함 (빛번짐이 심하면은 3번으로)    
+	- ambiguous(애매) : 거리가 일정이상 멀어졌다고 생각이 들면 형체와 상관없이 3번 빛은 번졌는데 거리가 가깝고 박스 형체가 보이는 경우는 OK
+5. 신호등 라벨링 범위
+	- #### :black_nib: 어떤 신호등이든 빨간불/파란불  2칸만 라벨링
+	- #### :black_nib: 화살표는 라벨링 하지 않음
+	- #### :black_nib: 숫자도 라벨링 하지 않음.
+
+	
+		<image src="https://user-images.githubusercontent.com/34594339/91948589-dbd0c600-ed3a-11ea-97f5-a894caba618e.png" width="80%">
+
+
+#### :black_nib: 결과 : 횡단보도 인식은 매우 잘됨. 그러나 신호등을 거의 잡지 못함 
+#### :black_nib: 신호등이 매우 크게 잡힌 상태로 라벨링 되었기 때문인듯함.
+
+<br>
+</div>
+</details>
+
+
+### 이 이후부터는 [Data Augmentation](https://github.com/bosl95/MachineLearning_Note/tree/master/contest_preparation/data%20augmentation)에 정리
+
+
 
 ## :pushpin: YOLO Object Detection on Android
 
