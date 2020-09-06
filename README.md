@@ -1,6 +1,7 @@
 
 
 
+
 # 시선(視先)
 
 ###  視先(볼 시, 먼저 선) 
@@ -17,6 +18,7 @@
 2. [Modify cfg for custom data](#pencil2-modify-cfg-for-custom-data)
 3. [Train YOLOv3 tiny on Google Colab](#pencil2-train-yolov3-tiny-on-google-colab)
 4. [How to Increase Accuracy](#pencil2-how-to-increase-accuracy)
+5. [Detect on Video](#pencil2-detect-on-video)
 ### [4. YOLO Object Detection on Android](#pushpin-yolo-object-detection-on-android)
 ### [5. TTS(Text To Speech)](#pushpin-text-to-speech)
 ### [6. Outputs](#pushpin-outputs)
@@ -483,17 +485,20 @@ BBox25/Bbox30 제외한 모든 데이터셋 학습 ⇒ 30분 남겨놓고 터졌
 #### :black_nib: 신호등이 매우 크게 잡힌 상태로 라벨링 되었기 때문인듯함.
 
 <br>
-</div>
-</details>
-
 
 ### 이 이후부터는 [Data Augmentation](https://github.com/bosl95/Seesun/blob/master/Data%20augmentation)에 정리
 
+<br>
+</div>
+</details>
+
+### :pencil2: Detect on Video
 
 - 남은 과제들
 - [x] 횡단보도 정확도 올리기 
 - [x] 횡단보도 + 신호등 데이터셋을 모두 합친 학습 모델 만들기.
 - [ ]  횡단보도 / 신호등 을 탐지하는 학습 모델 정확도 올리기
+
 
 ## :pushpin: YOLO Object Detection on Android
 
