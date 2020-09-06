@@ -112,7 +112,7 @@ Darknet을 Tensorflow에 적용<br>
 
 ## :pushpin: Custom YOLO Model
 
-### :pencil2: Data Processing
+### :pencil2: Custom Data
 <br>
 <details>
 <summary> :books: Data processing </summary>
