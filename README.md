@@ -2,6 +2,7 @@
 
 
 
+
 # 시선(視先)
 
 ###  視先(볼 시, 먼저 선) 
@@ -185,11 +186,14 @@ F12를 눌러 자바 스크립트 창에 입력해주면 된다.<br>
    - obj.names의 경로  
    - weight을 저장할 폴더의 경로  
 ####  :page_with_curl: ``obj.cfg`` : 모델 구조 및 train과 관련된 설정이 들어있는 파일  
-   - batch 및  subdivisions 사이즈(Cuda memory 관련), width 및 height 사이즈  
-   - learning late, burn_in, max_batches,  policy, steps, scales 설정  
-   - filter : (4+1+class수) * 3  
-   - classes  
-   - anchors 및 mask 설정  
+   - *batch* : 한번에 몇 장을 처리할 지
+   - *subdivisions*  : batch를 이 값만큼 나누어 처리이즈
+   - *width, height* 
+   - *learning late, burn_in, max_batches,  policy, steps, scales* 설정  
+   - *filter : (4+1+class수) x 3*
+   - *classes*
+   - *anchors* : 초기의 크기(너비, 높이), (개체 크기에 가장 가까운)일부는 신경망(최종 기능 맵)의 일부 출력을 사용하여 개체 크기로 크기가 조정
+   - *mask* 
 #### :page_with_curl: ``weight``  : 미리 트레이닝된 모델 또는 darknet53.conv.74 등의 가중치 파일
 #### :page_with_curl: ``obj.names`` : annotation에 포함되어있는 라벨링 이름 목록. 검출하고자 하는 목록  
 #### :page_with_curl: ``train.txt`` : 학습시킬 이미지들의 경로들이 담긴 리스트  

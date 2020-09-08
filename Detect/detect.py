@@ -1,19 +1,19 @@
 import cv2
 from PIL import Image
-from yolo import YOLO
+from keras_yolo3.yolo import YOLO
 import numpy as np
 
 yolo = YOLO(model_path='keras_yolo3/model_data/square_tiny2.h5', classes_path='classes.txt', anchors_path='keras_yolo3/model_data/anchors2.txt')
 
 
-cap = cv2.VideoCapture('IMG_7544.MOV')
+cap = cv2.VideoCapture('video/crosswalk2.MOV')
 result = 0
 while True:
     ret, frame = cap.read()
 
     if ret:
         x, y, _ = frame.shape
-        frame = cv2.resize(frame, dsize=(416, 416), interpolation=cv2.INTER_CUBIC)
+        frame = cv2.resize(frame, dsize=(300, 300), interpolation=cv2.INTER_CUBIC)
 
         width, height, _ = frame.shape
         matrix = cv2.getRotationMatrix2D((height / 2, width / 2), 270, 1)
