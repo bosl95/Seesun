@@ -319,11 +319,6 @@ F12를 눌러 자바 스크립트 창에 입력해주면 된다.<br>
 </details>
 <br>
 
-#### :hourglass_flowing_sand: To Do
-- [x] 횡단보도 정확도 올리기 
-- [x] 횡단보도 + 신호등 데이터셋을 모두 합친 학습 모델 만들기.
-- [ ]  횡단보도 / 신호등 을 탐지하는 학습 모델 정확도 올리기
-
 
 ## :pushpin: YOLO Object Detection on Android
 
