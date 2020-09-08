@@ -1,3 +1,4 @@
+
 # Increase Accuracy
 
 ### 신호등 + 횡단보도 YOLO  모델 정확도 올리기    
@@ -10,7 +11,7 @@
 :hourglass_flowing_sand: Task
 
 - [x] 신호등 데이터셋 정사각형 형태로 학습    
-- [ ]  신호등 데이터셋을 실제 횡단보도 사진의 크기와 유사하게 resize해서 학습    
+- [x]  신호등 데이터셋을 실제 횡단보도 사진의 크기와 유사하게 resize해서 학습    
 - [ ]  횡단보도 데이터셋의 신호등을 지우기
 - [ ] 횡단보도 데이터셋의 신호등까지 라벨링해서 하기
 
@@ -70,6 +71,11 @@
    
 <image src="https://user-images.githubusercontent.com/34594339/92190089-2d906200-ee9b-11ea-81ae-4c6126a731a5.png" width="70%">    
 
+<br>
+
+### :point_right: [result](https://youtu.be/7nY9py7DEQw)
+
+
  <br>
 </div>    
 </details>    
@@ -91,7 +97,17 @@
     <image src="https://user-images.githubusercontent.com/34594339/92205483-bcfc3c00-eec0-11ea-9e88-7162df41d5c8.png" width="50%">    
     
    <예시> 876x876 크기 안에 300x300 으로 리사이즈된 신호등 데이터     
-     
+   
+<br>
+
+### :mag_right: 결과물
+
+:black_nib: 신호등에 대한 인식률이 올랐다. <br>
+:black_nib: 작은 객체(신호등)은 여전히 인식이 되지 않았다.
+
+### :point_right: [result](https://youtu.be/mKuDjEIbfsg)
+
+
  <br>
  </div>    
 </details>
