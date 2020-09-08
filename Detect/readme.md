@@ -57,7 +57,9 @@
 
 <br>
 
-#### :collision: ERROR:collision:
+<details>
+<summary>  :collision: ERROR:collision: </summary>
+<br>
 
 ![image](https://user-images.githubusercontent.com/34594339/92444282-99513280-f1ed-11ea-99c9-1e4daf8e4191.png)
 
@@ -67,4 +69,6 @@
 anchors는 yolov4에서 제공하는 anchors 그대로 사용하여서 별 이상이 없었는데, 
 class는 4개 밖에 없어서 coco.names의 80개 클래스로 인식되어 pb 파일로 변환하는데 오류가 생겼었다.
 
-
+</div>
+</details>
+<br>
