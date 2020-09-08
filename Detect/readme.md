@@ -1,6 +1,7 @@
 
 
 
+
 # detect  
 
 ## :heavy_check_mark: [목차]
@@ -62,11 +63,8 @@
 
 ![image](https://user-images.githubusercontent.com/34594339/92444282-99513280-f1ed-11ea-99c9-1e4daf8e4191.png)
 
-
-- 분명 yolov4라는 것은 잘 인식 하는데 yolo convolutional layer에서 잘못된 정보가 들어간것이라고 판단
-
-> core/config.py line 14,  __C.YOLO.CLASSES = "./data/classes/coco.names"
-> ⇒ 알맞는 custom names로 설정
+#### core/config.py line 14,  __C.YOLO.CLASSES = "./data/classes/coco.names"
+#### ⇒ 알맞는 custom names로 설정
 
 anchors는 yolov4에서 제공하는 anchors 그대로 사용하여서 별 이상이 없었는데, 
 class는 4개 밖에 없어서 coco.names의 80개 클래스로 인식되어 pb 파일로 변환하는데 오류가 생겼었다.
