@@ -4,6 +4,7 @@
 
 
 
+
 # 시선(視先)
 
 ###  視先(볼 시, 먼저 선) 
@@ -113,8 +114,6 @@ Darknet을 Tensorflow에 적용<br>
   
 	 #### ⇒ yolov4 weight (위) / yolo4-tiny (아래)  
 	 #### 속도는 tiny가 훨씬 빠르다.  
-
-#### :x:  YOLOV4를 이용해 커스텀 데이터 셋을 만들려고 하였으나, YOLOV3를 이용한 정확도가 훨씬 높아 YOLOV3-tiny를 사용하기로 함.
 
  <br>
 </div>
@@ -255,7 +254,7 @@ F12를 눌러 자바 스크립트 창에 입력해주면 된다.<br>
 
 ###  :fire: train custom data
 
-	!./darknet detector train custom/custom.data custom/custom_yolov4-tiny.cfg custom/yolov4-tiny.conv.29 -dont_show 
+	!./darknet detector train custom/custom.data custom/custom_yolov3-tiny.cfg custom/yolov3-tiny.conv.15 -dont_show 
 
 - 원래 map과 loss에 대한 그래프가 나오는데 코랩의 리눅스 상에서는 볼 수 없는 듯하다.<br>
   에러가 나기 때문에 dont_show를 추가해 보지 않는 것으로 처리해준다. <br>
@@ -285,7 +284,18 @@ F12를 눌러 자바 스크립트 창에 입력해주면 된다.<br>
 
 ### :pencil2: Train YOLOv4 on Google Colab
 
+<details>
+<summary>  :point_right: Click </summary>
 <br>
+
+	!./darknet detector train custom/class.data cfg/yolov4.cfg yolov4.conv.137 -dont_show -map
+
+#### 학습 전까지의 과정은 YOLOv3-tiny와 크게 다른 점은 없다.
+
+</div>
+</details>
+<br>  
+
 
 ### :pencil2: How to Increase Accuracy
 
