@@ -72,3 +72,17 @@ class는 4개 밖에 없어서 coco.names의 80개 클래스로 인식되어 pb 
 </div>
 </details>
 <br>
+
+<details>
+<summary> :x: Cannot run on Android :x: </summary>
+<br>
+
+#### Android tesorflow version : https://mvnrepository.com/artifact/org.tensorflow/tensorflow-android <br>
+#### Prerequisites of Tensorflow convert file : Tensorflow 2.3.0rc0
+<br>
+
+### :point_right: 안드로이드에서 인식이 되지 않음 
+
+</div>
+</details>
+<br>
