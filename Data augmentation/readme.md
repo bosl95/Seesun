@@ -37,7 +37,7 @@
     
 ## :rocket: Make Square
 #### :pencil: 직사각형의 이미지를 정사각형 형태로 만들어주기    
-⇒ yolov3에서 416*416 형태로 학습을 진행하기 때문에 정사각형 변형을 통해 정확도 향상을 확인    
+⇒ yolov3에서 416x416 형태로 학습을 진행하기 때문에 정사각형 변형을 통해 정확도 향상을 확인    
     
 'images' 폴더 대신에 들어갈 인풋 이미지 폴더 이름을 넣어주고, 'output' 폴더에 정사각형 형태의 이미지가 저장  
   <br>  
@@ -57,7 +57,7 @@
 
 ## :rocket: resize 300x300.py   
 
-#### :pencil: 300*300 크기의 사진으로 resize 해준다.
+#### :pencil: 300x300 크기의 사진으로 resize 해준다.
 <br>
 
 ## :pushpin: Data augmentation
@@ -312,7 +312,7 @@ BBox25/Bbox30 제외한 모든 데이터셋 학습 ⇒ 30분 남겨놓고 터졌
    <image src="https://user-images.githubusercontent.com/34594339/92205369-81617200-eec0-11ea-9702-035496b8ccca.png" width="50%">    
     
    <예시> 이미지 크기 : 822x822    
-2. A' = A를 300*300 크기로 바꿔준다. (횡단보도 데이터셋의 신호등 데이터의 평균 크기로 잡았다.)    
+2. A' = A를 300x300 크기로 바꿔준다. (횡단보도 데이터셋의 신호등 데이터의 평균 크기로 잡았다.)    
     
     <image src="https://user-images.githubusercontent.com/34594339/92205483-bcfc3c00-eec0-11ea-9e88-7162df41d5c8.png" width="50%">    
     
