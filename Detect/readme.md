@@ -1,15 +1,16 @@
 
 
+
 # Detect  
 
-## :heavy_check_mark: [목차]
-#### 1. [YOLO를 Tensorflow에서 사용하기](#pushpin-tensorflow에서-사용하기)
-#### 2. [Keras Detect](#pushpin-keras-detect)
-#### 3.  [YOLOv4 tensorflow lite](#pushpin-yolov4-tensorflow-tflite)
+## :heavy_check_mark: Contents
+### 1. [Use YOLO In Tensorflow](#pushpin-use-yolo-in-tensorflow)
+### 2. [Keras Detect](#pushpin-keras-detect)
+### 3.  [YOLOv4 tensorflow lite](#pushpin-yolov4-tensorflow-tflite)
 
 <br>
   
-## :pushpin: tensorflow에서 사용하기
+## :pushpin: Use YOLO in Tensorflow
   
 #### :pencil2: ckpt 파일 : 모델의 변수(가중치)인 체크포인트 파일
 - 텐서학습된 모델의 구조를 제외한 변수들을 담고 있는 파일.
@@ -61,7 +62,7 @@
 <summary>  :collision: ERROR:collision: </summary>
 <br>
 
-![image](https://user-images.githubusercontent.com/34594339/92444282-99513280-f1ed-11ea-99c9-1e4daf8e4191.png)
+<image src="https://user-images.githubusercontent.com/34594339/92444282-99513280-f1ed-11ea-99c9-1e4daf8e4191.png" width="100%">
 
 #### core/config.py line 14,  __C.YOLO.CLASSES = "./data/classes/coco.names"
 #### ⇒ 알맞는 custom names로 설정
