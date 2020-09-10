@@ -1,11 +1,4 @@
 
-
-
-
-
-
-
-
 # 시선(視先)
 
 ###  視先(볼 시, 먼저 선) 
@@ -157,6 +150,9 @@ F12를 눌러 자바 스크립트 창에 입력해주면 된다.<br>
 <br>
 
 ## :pushpin: Custom YOLO Model
+
+![](https://img.shields.io/badge/python-3.8-green?style=flat) ![](https://img.shields.io/badge/tensorflow-1.6.0-red?style=flat) ![](https://img.shields.io/badge/keras-2.1.5-blue)
+<br>
 
 ### :pencil2: Data Processing
 <details>

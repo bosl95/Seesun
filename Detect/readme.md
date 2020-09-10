@@ -1,15 +1,24 @@
 
 
+
 # Detect  
 
-## :heavy_check_mark: [목차]
-#### 1. [YOLO를 Tensorflow에서 사용하기](#pushpin-tensorflow에서-사용하기)
-#### 2. [Keras Detect](#pushpin-keras-detect)
-#### 3.  [YOLOv4 tensorflow lite](#pushpin-yolov4-tensorflow-tflite)
+## :heavy_check_mark: Contents
+### 1. [Use YOLO In Tensorflow](#pushpin-use-yolo-in-tensorflow)
+### 2. [Keras Detect](#pushpin-keras-detect)
+### 3.  [YOLOv4 tensorflow lite](#pushpin-yolov4-tensorflow-tflite)
+
+<br>
+<br>
+
+### :hourglass_flowing_sand: To do
+- [x] *Transform YOLO for using Tensorflow (.h5 file)*
+- [x] *Set the Tesorflow version of transformed YOLO*
+- [ ] *Transform YOLO for using android (pb file)*
 
 <br>
   
-## :pushpin: tensorflow에서 사용하기
+## :pushpin: Use YOLO in Tensorflow
   
 #### :pencil2: ckpt 파일 : 모델의 변수(가중치)인 체크포인트 파일
 - 텐서학습된 모델의 구조를 제외한 변수들을 담고 있는 파일.
@@ -32,16 +41,39 @@
 
 ### :pencil2: yolo weight를 keras 모델로 변형 ⇒ ``.h5 파일`` 생성
 
-	 python convert.py -w darknet53.cfg darknet53.weights model_data/darknet53_weights.h5
+<details>
+<summary>  :point_right: Click </summary>
+<br>
+<image src="https://user-images.githubusercontent.com/34594339/92692365-03e5a800-f37f-11ea-9679-2cf1ebdd4d8b.png" width="70%">
 
-### :rocket: detect.py
+<br>
+
+#### Android에서 사용할 수 있는 버전인 Tensorflow 1.6.0을 사용하여 변환을 시도하였고 성공
+
+</div>
+</details>
+<br>
+
+### :rocket: Detect.py
 	
 #### .h5 파일을 통해 파이썬으로 이미지, 비디오를 detection
 
 #### :x: 안드로이드에서 구동하기 위해서는 tensorflow의 버전에 주의 :x:
-(충돌이 날 수 있다.)
 
-:round_pushpin: Source : https://github.com/qqwweee/keras-yolo3
+
+<details>
+<summary>  :point_right: Click </summary>
+<br>
+
+Link : https://youtu.be/wBbyAQJkaNI
+
+</div>
+</details>
+<br>
+
+:round_pushpin: Source : https://github.com/Ma-Dan/keras-yolo4 <br>
+:round_pushpin: Source : https://github.com/qqwweee/keras-yolo3 <br>
+
 
 <br>
 
@@ -61,7 +93,7 @@
 <summary>  :collision: ERROR:collision: </summary>
 <br>
 
-![image](https://user-images.githubusercontent.com/34594339/92444282-99513280-f1ed-11ea-99c9-1e4daf8e4191.png)
+<image src="https://user-images.githubusercontent.com/34594339/92444282-99513280-f1ed-11ea-99c9-1e4daf8e4191.png" width="100%">
 
 #### core/config.py line 14,  __C.YOLO.CLASSES = "./data/classes/coco.names"
 #### ⇒ 알맞는 custom names로 설정
