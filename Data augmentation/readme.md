@@ -1,22 +1,21 @@
 
 
+
 # Increase Accuracy
 
 ### 신호등 + 횡단보도 YOLO  모델 정확도 올리기    
 
 :hourglass_flowing_sand: Goal
-- [x] 횡단보도 정확도 올리기 
-- [x] 횡단보도 + 신호등 데이터셋을 모두 합친 학습 모델 만들기.
-- [ ]  횡단보도 / 신호등 을 탐지하는 학습 모델 정확도 올리기
+- [x] *Increase crosswalk accuracy*
+- [x] *Make Model that combines crosswalk and traffic light Dataset*
+- [x] *Increase Combined Model Accuracy*
+<br>
 
 :hourglass_flowing_sand: Task
 
-- [x] 신호등 데이터셋 정사각형 형태로 학습    
-- [x]  신호등 데이터셋을 실제 횡단보도 사진의 크기와 유사하게 resize해서 학습    
-- [ ]  횡단보도 데이터셋의 신호등을 지우기
-- [ ] 횡단보도 데이터셋의 신호등까지 라벨링해서 하기
-
-- [ ] YOLOv4로 학습 다시 해보기 (신호등 인식률을 위한 정확도에 초점을 맞추기)
+- [x] *version 1 : Square traffic light Dataset and Train Model*
+- [x]  *version 2: Resize traffic light Dataset similar to the size of actual traffic light size*    
+- [x] *Retry Training YOLOv4 focusing on Accuracy*
 
 <details>    
 <summary> Source </summary>    
@@ -334,3 +333,21 @@ BBox25/Bbox30 제외한 모든 데이터셋 학습 ⇒ 30분 남겨놓고 터졌
 <br>
 
 ### :heavy_check_mark: STEP2. YOLOv4
+
+<br>
+<details>    
+<summary> :mag_right: Result Image </summary>    
+<br>
+
+<image src="https://user-images.githubusercontent.com/34594339/92569047-0b437d80-f2bb-11ea-8835-7330ae998777.png" width="50%">
+
+<br>
+
+#### YOLOv3-tiny에 비해서 정확도가 높은 만큼이나 작은 물체도 상대적으로 잘 탐지됐다.
+
+<br>
+</div>    
+</details>
+<br>
+
+### :point_right: [result]()
