@@ -1,6 +1,5 @@
 
 
-
 # Detect  
 
 ## :heavy_check_mark: Contents
