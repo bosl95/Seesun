@@ -1,5 +1,6 @@
 
 
+
 # Detect  
 
 ## :heavy_check_mark: Contents
@@ -13,7 +14,7 @@
 ### :hourglass_flowing_sand: To do
 - [x] *Transform YOLO for using Tensorflow (.h5 file)*
 - [x] *Set the Tesorflow version of transformed YOLO*
-- [ ] *Transform YOLO for using android (pb file)*
+- [x] *Transform YOLO for using android (pb file)*
 
 <br>
   
@@ -47,7 +48,8 @@
 
 <br>
 
-#### Android에서 사용할 수 있는 버전인 Tensorflow 1.6.0을 사용하여 변환을 시도하였고 성공
+#### Android에서 사용할 수 있는 버전인 Tensorflow 1.6.0을 사용하여 변환을 시도. <br>
+#### 파이썬에서 영상을 테스트할 수 있었다.
 
 </div>
 </details>
@@ -78,9 +80,15 @@ Link : https://youtu.be/wBbyAQJkaNI
 
 ## :pushpin: YOLOv4 Tensorflow TFLite
 
-#### :zap: Convert Darknet weight to tensorflow
+#### :zap: Convert Darknet weight to tensorflow (.pb file)
 
-	python save_model.py --weights ./data/yolov4.weights --output ./checkpoints/yolov4-416 --input_size 416 --model yolov4
+	python save_model.py --weights ./data/yolov4.weights --output ./checkpoints/yolov4-512 --input_size 512 --model yolov4
+
+<br>
+
+#### :zap: Convert Darknet weight to Tensorflow Lite (.tflite file)
+
+	python convert_tflite.py --weights ./checkpoints/yolov4-512 --output ./checkpoints/yolov4-512.tflite
 
 <br>
 
@@ -105,14 +113,30 @@ class는 4개 밖에 없어서 coco.names의 80개 클래스로 인식되어 pb 
 <br>
 
 <details>
-<summary> :x: Cannot run on Android :x: </summary>
+<summary> :x: Version Error :x: </summary>
 <br>
 
 #### Android tesorflow version : https://mvnrepository.com/artifact/org.tensorflow/tensorflow-android <br>
 #### Prerequisites of Tensorflow convert file : Tensorflow 2.3.0rc0
 <br>
 
-### :point_right: 안드로이드에서 인식이 되지 않음 
+### :point_right: [Tensorflow](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/examples/android)에서 제공되는 안드로이드 구현 소스는  tensorflow-lite를 compile 하여 사용<br>
+### 이 버전과 내가 만든 케라스 모델의 텐서플로우 버전(*2.3.0rc0*)에서 충돌이 나는 듯하다. <br>
+
+</div>
+</details>
+<br>
+
+<details>
+<summary> :mag: Detection result </summary>
+<br>
+
+<image src="https://user-images.githubusercontent.com/34594339/92913805-0838c080-f466-11ea-8fb0-6cc823b48cca.png" width="60%">
+
+<br>
+
+<image src="https://user-images.githubusercontent.com/34594339/92914015-3918f580-f466-11ea-9b07-28637788c2b3.png" width="70%">
+
 
 </div>
 </details>
