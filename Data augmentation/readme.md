@@ -349,5 +349,3 @@ BBox25/Bbox30 제외한 모든 데이터셋 학습 ⇒ 30분 남겨놓고 터졌
 </div>    
 </details>
 <br>
-
-### :point_right: [result]()
