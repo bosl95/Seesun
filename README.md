@@ -5,6 +5,10 @@
 > ### :loudspeaker: "먼저 바라보고, 시각 기능을 제공하다."
 <br>
 
+[![Video Label](http://img.youtube.com/vi/wBbyAQJkaNI/1.jpg)](https://youtu.be/wBbyAQJkaNI)
+
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/wBbyAQJkaNI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ### 시각 장애인의 안전한 보행을 위한 횡단보도/신호등 탐지 프로그램
 
 ## :heavy_check_mark: Contents
