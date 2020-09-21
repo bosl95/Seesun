@@ -69,7 +69,7 @@ if __name__ == '__main__':
 
             out.write(image)
             print(time)
-            # cv2.imshow('image', image)
+            cv2.imshow('image', image)
             time += 1
             if cv2.waitKey(1) & 0xFF == ord('q'):
                 break
