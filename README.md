@@ -321,7 +321,7 @@ F12를 눌러 자바 스크립트 창에 입력해주면 된다.<br>
 
 #### 파이썬의  OpenCV를 사용하기 위해 Darknet 모델을 Keras 모델로 변환
 
-#### :point_right: <a href="https://github.com/bosl95/Seesun/tree/master/Detect#pushpin-keras-detect">Click</a>
+#### :point_r   ight: <a href="https://github.com/bosl95/Seesun/tree/master/Detect#pushpin-keras-detect">Click</a>
 
 <br>
 </div>
