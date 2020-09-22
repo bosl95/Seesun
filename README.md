@@ -1,5 +1,8 @@
 
+
 # 시선(視先)
+![](https://img.shields.io/badge/python-3.8-green) ![](https://img.shields.io/badge/tensorflow-2.3.0rc0-red)  ![](https://img.shields.io/badge/Flask-1.1.2-blue)  ![](https://img.shields.io/badge/Flask--ngrok-0.0.25-blueviolet) ![](https://img.shields.io/badge/-Google%20Colab-orange)
+<br>
 
 ###  視先(볼 시, 먼저 선) 
 > ### :loudspeaker: "먼저 바라보고, 시각 기능을 제공하다."
@@ -17,9 +20,6 @@
 <br>
 
 ## :heavy_check_mark: Contents
-
-![](https://img.shields.io/badge/python-3.8-green?style=flat) ![](https://img.shields.io/badge/tensorflow-2.3.0rc0-red?style=flat) ![](https://img.shields.io/badge/keras-2.1.5-blue) ![](https://img.shields.io/badge/keras-2.1.5-blue)
-<br>
 
 ###  [1. Summary](#pushpin-project-summary)
 ### [2. Background](#pushpin-background)
