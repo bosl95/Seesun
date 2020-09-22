@@ -12,11 +12,15 @@
 
 ### :point_down: 클릭하여 영상 재생<br>
 
-[![Video Label](https://user-images.githubusercontent.com/34594339/93470670-366a4480-f92d-11ea-847e-6cf1c0384be0.png)](https://youtu.be/wBbyAQJkaNI)
+[![Video Label](https://user-images.githubusercontent.com/34594339/93470670-366a4480-f92d-11ea-847e-6cf1c0384be0.png)](https://youtu.be/tgq_q0ongho)
 
 <br>
 
 ## :heavy_check_mark: Contents
+
+![](https://img.shields.io/badge/python-3.8-green?style=flat) ![](https://img.shields.io/badge/tensorflow-2.3.0rc0-red?style=flat) ![](https://img.shields.io/badge/keras-2.1.5-blue) ![](https://img.shields.io/badge/keras-2.1.5-blue)
+<br>
+
 ###  [1. Summary](#pushpin-project-summary)
 ### [2. Background](#pushpin-background)
 ### [3. Custom YOLO Model](#pushpin-custom-yolo-model)
@@ -32,6 +36,8 @@
 ### [4. YOLO Object Detection on Android](#pushpin-yolo-object-detection-on-android)
 ### [5. TTS(Text To Speech)](#pushpin-text-to-speech)
 ### [6. Outputs](#pushpin-outputs)
+
+<br>
 
 ## :pushpin: Project Summary
 
@@ -159,9 +165,6 @@ F12를 눌러 자바 스크립트 창에 입력해주면 된다.<br>
 <br>
 
 ## :pushpin: Custom YOLO Model
-
-![](https://img.shields.io/badge/python-3.8-green?style=flat) ![](https://img.shields.io/badge/tensorflow-2.3.0rc0-red?style=flat) ![](https://img.shields.io/badge/keras-2.1.5-blue)
-<br>
 
 ### :pencil2: Data Processing
 <details>
