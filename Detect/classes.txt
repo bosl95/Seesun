@@ -1,4 +1,0 @@
-cross walk
-red light
-green light
-black
