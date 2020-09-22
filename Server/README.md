@@ -4,7 +4,7 @@
 
 ## :heavy_check_mark: Contents
 ### 1. [GPU Cloud Service](#pushpin-gpu-cloud-service)
-### 2. [Use Flask Framework And ngrok](#pushpin-use-flask-framework)
+### 2. [Use Flask Framework And Ngrok](#pushpin-use-flask-framework)
 ### 3. [Make YOLOv4 API](#pushpin-make-yolov4-api)
 ### 4. [Detect Object](#pushpin-detect-object)
 
@@ -20,7 +20,7 @@
 
 ### :pencil2: AWS (Amazon Web Services) <br>
 #### AWS는 Amazon에서 개발한 클라우드 컴퓨팅 플랫폼이다. <br>
-#### GPU 서버를 사용하기 위해서는 ~~과금이 부과~~된다. ⇒ Amazon에서 제공해주는 AWS pretier를 사용할 수 없다. ( cpu만 사용 가능) <br>
+#### GPU 서버를 사용하기 위해서는 과금이 부과된다. ⇒ 가격이 부담되기 때문에 사용하기 어렵고 Amazon에서 무료로 제공해주는 AWS pretier로는 사용할 수 없다. ( cpu만 사용 가능) <br>
 
 <br>
 
@@ -31,7 +31,7 @@
 
 <br>
 
-## :pushpin: Use Flask Framework
+## :pushpin: Use Flask Framework and Ngrok
 
 <details>
 <summary> :point_right: Django vs Flask </summary>
@@ -50,7 +50,28 @@
 	> 3. ORM 기능을 사용할 경우 SQLAlchemy 와 같은 패키지 설치 필요
 	> 4. 자유도가 높다! ⇒  보안의 문제에 주의
 
+<br>
+
 ### :point_right: 서버에서 YOLO 모델을 이용해 탐지 결과만 전송해주면 되는 단순한 기능으로 "Flask Framework"를 이용하기로 했다.
+<br>
+</div>
+</details>
+<br>
+
+### :pencil2: Ngrok
+
+#### 포트 포워딩과 같은 네트워크 환경 설정 변경없이 로컬에 실행중인 서버를 안전하게 외부에서 접근 가능하도록 해주는 도구 <br>
+#### 무료 버전은 분당 40 커넥션이 가능하다. 60회의 커넥션이 필요하므로 무조건 Pro 버전을 이용해야했다. (거지가 되어간다... :sob:)
+
+<details>
+<summary> :point_right: How to use Ngrok </summary>
+<br>
+
+	!./ngrok authtoken your_authentication
+	get_ipython().system_raw('./ngrok http -subdomain=your_domain 5000 &')
+
+### get_ipython().system_raw()는 Google Colab에서 사용, Linux를 사용하는 경우는 명령어만 치면 된다.<br>
+### subdomain은 본인이 설정한 도메인 이름을 적어주면 된다. (유료 계정에서 사용 가능하다.)<br>
 <br>
 </div>
 </details>
