@@ -323,7 +323,7 @@ F12를 눌러 자바 스크립트 창에 입력해주면 된다.<br>
 
 #### 파이썬의  OpenCV를 사용하기 위해 Darknet 모델을 Keras 모델로 변환
 
-#### :point_r   ight: <a href="https://github.com/bosl95/Seesun/tree/master/Detect#pushpin-keras-detect">Click</a>
+#### :point_right: <a href="https://github.com/bosl95/Seesun/tree/master/Detect#pushpin-keras-detect">Click</a>
 
 <br>
 </div>
@@ -342,12 +342,12 @@ F12를 눌러 자바 스크립트 창에 입력해주면 된다.<br>
 
 ### :pencil2: Detection on Linux server
 
-:point_right: [Click](https://github.com/bosl95/Seesun/tree/master/Server) 
+####:point_right: [Click](https://github.com/bosl95/Seesun/tree/master/Server) 
 
 <br>
 
 ## :pushpin: Text To Speech
-:point_right: [Click]()
+####:point_right: [Click]()
 
 ## :pushpin: Detect Kiosk
 
