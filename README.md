@@ -1,5 +1,6 @@
 
 
+
 # 시선(視先)
 ![](https://img.shields.io/badge/python-3.8-green) ![](https://img.shields.io/badge/tensorflow-2.3.0rc0-red)  ![](https://img.shields.io/badge/Flask-1.1.2-blue)  ![](https://img.shields.io/badge/Ngrok-2.0-blueviolet) ![](https://img.shields.io/badge/-Google%20Colab-orange)
 <br>
@@ -35,7 +36,8 @@
 5. [Detect on Video](#pencil2-detect-on-video)
 ### [4. YOLO Object Detection on Android](#pushpin-yolo-object-detection-on-android)
 ### [5. TTS(Text To Speech)](#pushpin-text-to-speech)
-### [6. Outputs](#pushpin-outputs)
+### [6. Detect Kiosk](#pushpin-detect-kiosk)
+### [7. Outputs](#pushpin-outputs)
 
 <br>
 
@@ -345,5 +347,8 @@ F12를 눌러 자바 스크립트 창에 입력해주면 된다.<br>
 <br>
 
 ## :pushpin: Text To Speech
+:point_right: [Click]()
+
+## :pushpin: Detect Kiosk
 
 ## :pushpin: Outputs
