@@ -347,6 +347,9 @@ F12를 눌러 자바 스크립트 창에 입력해주면 된다.<br>
 <br>
 
 ## :pushpin: Text To Speech
+
+### 횡단보도와 신호등을 TTS 음성을 통해 안내<br>
+
 #### :point_right: [Click]()
 
 ## :pushpin: Detect Kiosk
