@@ -1,6 +1,7 @@
 
 
 
+
 # Increase Accuracy
 
 ### 신호등 + 횡단보도 YOLO  모델 정확도 올리기    
@@ -209,6 +210,9 @@
 <br>
 </div>
 </details>
+<br>
+
+### :heavy_check_mark: STEP2. YOLOv4
 
 <br>
 <details>
@@ -294,7 +298,6 @@ BBox25/Bbox30 제외한 모든 데이터셋 학습 ⇒ 30분 남겨놓고 터졌
 
 ### :point_right: [result](https://youtu.be/7nY9py7DEQw)
 
-
  <br>
 </div>    
 </details>    
@@ -304,7 +307,8 @@ BBox25/Bbox30 제외한 모든 데이터셋 학습 ⇒ 30분 남겨놓고 터졌
 <br>
 	
 정사각형 형태의 신호등을 그냥 학습시켜도 신호등이 가깝지 않으면 인식이 잘 되지 않았다.    
-그래서 우리가 만든 신호등 데이터 셋을 횡단보도 데이터셋안의  신호등 데이터와 유사한 크기로 만들어주었다.   
+그래서 우리가 만든 신호등 데이터 셋을 횡단보도 데이터셋안의  신호등 데이터와 유사한 크기로 만들어주었다.<br>
+[(Darknet에서 사이즈를 조정해주기는 하나, 정사각형으로 resize하는 것이 성능에 영향을 주기는 하는 것 같다.)](https://github.com/pjreddie/darknet/issues/728#issuecomment-383539370) <br>
 
 1. 정사각형 형태로 리사이즈된 신호등 데이터셋 A    
     
@@ -330,9 +334,6 @@ BBox25/Bbox30 제외한 모든 데이터셋 학습 ⇒ 30분 남겨놓고 터졌
 <br>
 </div>    
 </details>
-<br>
-
-### :heavy_check_mark: STEP2. YOLOv4
 
 <br>
 <details>    
