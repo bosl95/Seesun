@@ -353,12 +353,16 @@ BBox25/Bbox30 제외한 모든 데이터셋 학습 ⇒ 30분 남겨놓고 터졌
 <summary> :mag_right: Result Image </summary>    
 <br>
 
+### :point right: [Link](https://youtu.be/tgq_q0ongho) <br>
+
 <image src="https://user-images.githubusercontent.com/34594339/92569047-0b437d80-f2bb-11ea-8835-7330ae998777.png" width="50%">
 
 <br>
 
 #### YOLO3-tiny 마지막 학습에서 썼던 정사각형+300x300 사이즈의 데이터셋을 YOLOv4를 이용해 학습 시켰다.<br>
 #### YOLOv3-tiny에 비해서 정확도가 높은 만큼이나 작은 물체도 상대적으로 잘 탐지됐다.
+
+
 
 <br>
 </div>    
