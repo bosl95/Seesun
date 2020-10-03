@@ -326,7 +326,7 @@ BBox25/Bbox30 제외한 모든 데이터셋 학습 ⇒ 30분 남겨놓고 터졌
 ### :mag_right: 결과물
 
 :black_nib: 신호등에 대한 인식률이 올랐다. <br>
-:black_nib: 작은 객체(신호등)은 여전히 인식이 되지 않았다.
+:black_nib: 작은 객체(신호등)은 완벽하게 인식이 되지 않았다.
 
 ### :point_right: [result](https://youtu.be/mKuDjEIbfsg)
 
