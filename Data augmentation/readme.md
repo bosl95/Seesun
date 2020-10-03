@@ -353,7 +353,7 @@ BBox25/Bbox30 제외한 모든 데이터셋 학습 ⇒ 30분 남겨놓고 터졌
 <summary> :mag_right: Result Image </summary>    
 <br>
 
-### :point right: [Link](https://youtu.be/tgq_q0ongho) <br>
+### :point_right: [Link](https://youtu.be/tgq_q0ongho) <br>
 
 <image src="https://user-images.githubusercontent.com/34594339/92569047-0b437d80-f2bb-11ea-8835-7330ae998777.png" width="50%">
 
