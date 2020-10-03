@@ -1,0 +1,12 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar"> <!-- 타이틀바 제거를 위한 설정 -->
+        <!-- Customize your theme here. -->
+        <item name="android:windowFullscreen">true</item> <!-- 상태바 제거를 위한 설정 -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+</resources>

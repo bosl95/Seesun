@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="322dp"
+    android:layout_height="155dp"
+    android:layout_gravity="center"
+    android:background="@layout/dialog_background_round"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="289dp"
+            android:layout_height="71dp"
+            android:layout_margin="5dp"
+            android:layout_weight="0.6"
+            android:gravity="center_horizontal"
+            android:text="튜토리얼을 들으시겠습니까?"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="291dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="12dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="149dp"
+                android:layout_height="38dp"
+                android:text="예" />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="149dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:text="아니오" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
