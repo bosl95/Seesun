@@ -69,7 +69,7 @@
 	5 : red light2
 	6 : black2
 
-### ⇒ ambiguous 파일 1~3의 라벨을 4~6으로 변경해준다. <br>
+### ⇒ ambiguous 파일 1-3의 라벨을 4-6으로 변경해준다. <br>
 
 <br>
 
