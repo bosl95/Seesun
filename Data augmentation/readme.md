@@ -1,7 +1,4 @@
 
-
-
-
 # Increase Accuracy
 
 ### 신호등 + 횡단보도 YOLO  모델 정확도 올리기    
@@ -58,6 +55,22 @@
 ## :rocket: resize 300x300.py   
 
 #### :pencil: 300x300 크기의 사진으로 resize 해준다.
+<br>
+
+## :rocket: ambiguous_label.py
+### Ambiguous 폴더의 라벨을 변경해준다.<br>
+
+	class label
+	0 : cross walk
+	1 : green light
+	2 : red light
+	3 : black
+	4 : green light2
+	5 : red light2
+	6 : black2
+
+### ⇒ ambiguous 파일 1~3의 라벨을 4~6으로 변경해준다. <br>
+
 <br>
 
 ## :pushpin: Data augmentation
