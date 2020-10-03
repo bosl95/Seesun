@@ -1,6 +1,3 @@
-
-
-
 # 시선(視先)
 ![](https://img.shields.io/badge/python-3.8-green) ![](https://img.shields.io/badge/tensorflow-2.3.0rc0-red)  ![](https://img.shields.io/badge/Flask-1.1.2-blue)  ![](https://img.shields.io/badge/Ngrok-2.0-blueviolet) ![](https://img.shields.io/badge/-Google%20Colab-orange)
 <br>
@@ -350,7 +347,7 @@ F12를 눌러 자바 스크립트 창에 입력해주면 된다.<br>
 
 ### 횡단보도와 신호등을 TTS 음성을 통해 안내<br>
 
-#### :point_right: [Click]()
+#### :point_right: [Click](https://github.com/bosl95/Seesun/tree/master/Android)
 
 <br>
 
