@@ -11,7 +11,7 @@
 
 <br>
 
-### :point_down: 클릭하여 영상 재생<br>
+### :point_down: [YOLO 결과] 클릭하여 영상 재생 :point_down: <br>
 
 [![Video Label](https://user-images.githubusercontent.com/34594339/93470670-366a4480-f92d-11ea-847e-6cf1c0384be0.png)](https://youtu.be/tgq_q0ongho)
 
@@ -348,3 +348,7 @@ F12를 눌러 자바 스크립트 창에 입력해주면 된다.<br>
 #### :point_right: [Click](https://github.com/bosl95/Seesun/tree/master/Android)
 
 <br>
+
+### :pushpin: Output
+
+[![Video Label](https://user-images.githubusercontent.com/34594339/97328433-5b9d8b80-18b9-11eb-968c-932cd4b36102.png)](https://youtu.be/EIxk_VjPHTg)
