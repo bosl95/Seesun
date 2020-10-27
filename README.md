@@ -351,4 +351,7 @@ F12를 눌러 자바 스크립트 창에 입력해주면 된다.<br>
 
 ### :pushpin: Output
 
+
+### :point_down: 클릭하여 영상 재생 :point_down: <br>
+
 [![Video Label](https://user-images.githubusercontent.com/34594339/97328433-5b9d8b80-18b9-11eb-968c-932cd4b36102.png)](https://youtu.be/EIxk_VjPHTg)
