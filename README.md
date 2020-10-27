@@ -33,8 +33,6 @@
 5. [Detect on Video](#pencil2-detect-on-video)
 ### [4. YOLO Object Detection on Android](#pushpin-yolo-object-detection-on-android)
 ### [5. TTS(Text To Speech)](#pushpin-text-to-speech)
-### [6. Detect Kiosk](#pushpin-detect-kiosk)
-### [7. Outputs](#pushpin-outputs)
 
 <br>
 
