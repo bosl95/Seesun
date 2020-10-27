@@ -350,7 +350,3 @@ F12를 눌러 자바 스크립트 창에 입력해주면 된다.<br>
 #### :point_right: [Click](https://github.com/bosl95/Seesun/tree/master/Android)
 
 <br>
-
-## :pushpin: Detect Kiosk
-
-## :pushpin: Outputs
