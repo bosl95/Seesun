@@ -2,7 +2,7 @@
 ![](https://img.shields.io/badge/python-3.8-green) ![](https://img.shields.io/badge/tensorflow-2.3.0rc0-red)  ![](https://img.shields.io/badge/Flask-1.1.2-blue)  ![](https://img.shields.io/badge/Ngrok-2.0-blueviolet) ![](https://img.shields.io/badge/-Google%20Colab-orange)
 <br>
 
-구성원 : 박은소리, 안예지, 
+### 구성원 : 박은소리, 안예지, 김유리 <br>
 
 <br>
 
